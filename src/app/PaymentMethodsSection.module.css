@@ -1,0 +1,49 @@
+.container {
+    position: relative;
+    height: 100px; /* Chiều cao của toàn bộ phần chứa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Xếp phần text và logo theo chiều dọc */
+  }
+  
+  .textContent {
+    position: absolute; /* Đặt text ở vị trí tuyệt đối */
+    top: 50%; /* Căn chỉnh theo chiều dọc */
+    left: 50%; /* Căn chỉnh theo chiều ngang */
+    transform: translate(-50%, -50%); /* Giúp text nằm chính giữa cả về chiều ngang và dọc */
+    z-index: 20; /* Đảm bảo text nằm trên logo */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+  }
+  
+  .logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: scroll var(--animation-duration) linear infinite;
+    transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    z-index: 10;
+    width: 200%;             /* Gấp đôi chiều rộng để có thể cuộn */
+    margin-left: -50%;       /* Dịch chuyển container sang trái 50% */
+  }
+  
+  .container:hover .textContent {
+    opacity: 1; /* Hiển thị phần text khi hover */
+  }
+  
+  .container:hover .logoContainer {
+    filter: blur(4px); /* Làm mờ phần logo khi hover */
+    opacity: 0.3; /* Giảm độ rõ của logo khi hover */
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
