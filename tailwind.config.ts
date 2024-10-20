@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['OctoberL-Bold', 'OctoberL-Medium', 'OctoberL-Regular'],
+      },
       keyframes: {
         scroll: {
           "0%": { transform: "translateX(0)" },
