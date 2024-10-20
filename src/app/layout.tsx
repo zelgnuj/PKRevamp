@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
+const octoberlbold = localFont({
   src: "./fonts/OctoberL-Regular.otf",
   variable: "--font-october-l",
   weight: "100 900",
 });
-const geistMono = localFont({
+const octoberlreg = localFont({
   src: "./fonts/OctoberL-Regular.otf",
   variable: "--font-october-l",
   weight: "100 900",
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${octoberlbold.variable} ${octoberlreg.variable} antialiased`}
       >
         {children}
       </body>
