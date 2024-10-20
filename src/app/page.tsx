@@ -84,10 +84,10 @@ export default function LandingPage() {
             Giải pháp cổng thanh toán tin cậy và uy tín hàng đầu
           </h2>
           <p className="text-center text-xl mb-8 mt-5 text-gray-600 max-w-5xl mx-auto">
-            &quot;Vượt qua nhiều đề cử cùng hạng mục, Paykit nhận giải thưởng Sao
-            Khuê 2024 nhờ tính sáng tạo, hiệu quả kinh tế và khả năng ứng dụng
-            công nghệ để tạo ra tác động xã hội thông qua việc giải quyết các
-            điểm nghẽn về thanh toán cho nhà bán hàng trực tuyến.&quot;
+            &quot;Vượt qua nhiều đề cử cùng hạng mục, Paykit nhận giải thưởng
+            Sao Khuê 2024 nhờ tính sáng tạo, hiệu quả kinh tế và khả năng ứng
+            dụng công nghệ để tạo ra tác động xã hội thông qua việc giải quyết
+            các điểm nghẽn về thanh toán cho nhà bán hàng trực tuyến.&quot;
           </p>
           <div className="flex w-full justify-center pb-6">
             <Image
@@ -255,8 +255,8 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <p className="text-gray-600 mb-4">
-                &quot;Dịch vụ thanh toán này đã giúp chúng tôi tăng doanh số bán hàng
-                một cách đáng kể. Rất dễ sử dụng và đáng tin cậy.&quot;
+                &quot;Dịch vụ thanh toán này đã giúp chúng tôi tăng doanh số bán
+                hàng một cách đáng kể. Rất dễ sử dụng và đáng tin cậy.&quot;
               </p>
               <div className="flex items-center">
                 <Image
@@ -274,9 +274,9 @@ export default function LandingPage() {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <p className="text-gray-600 mb-4">
-                &quot;Chúng tôi đã thử nhiều giải pháp khác nhau, nhưng đây là dịch
-                vụ tốt nhất mà chúng tôi từng sử dụng. Khách hàng của chúng tôi
-                rất hài lòng.&quot;
+                &quot;Chúng tôi đã thử nhiều giải pháp khác nhau, nhưng đây là
+                dịch vụ tốt nhất mà chúng tôi từng sử dụng. Khách hàng của chúng
+                tôi rất hài lòng.&quot;
               </p>
               <div className="flex items-center">
                 <Image
@@ -294,8 +294,9 @@ export default function LandingPage() {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <p className="text-gray-600 mb-4">
-                &quot;Dịch vụ khách hàng tuyệt vời và tính năng đa dạng. Chúng tôi đã
-                tăng hiệu quả kinh doanh nhờ giải pháp thanh toán này.&quot;
+                &quot;Dịch vụ khách hàng tuyệt vời và tính năng đa dạng. Chúng
+                tôi đã tăng hiệu quả kinh doanh nhờ giải pháp thanh toán
+                này.&quot;
               </p>
               <div className="flex items-center">
                 <Image
@@ -354,14 +355,14 @@ export default function LandingPage() {
 
           {/* Hình ảnh mô tả sản phẩm */}
           <div className="lg:w-1/2 flex justify-center lg:justify-end">
-            <div className="relative flex items-center">
+            <div className="relative flex items-center overflow-hidden max-w-full">
               {/* Hình ảnh điện thoại (nhỏ hơn so với dashboard, căn chỉnh với cạnh trái của dashboard) */}
               <Image
                 src="/bj0BRpY6Hzx8Se5cgRa6lgMxM0.avif"
                 alt="Mobile App"
                 width={125}
                 height={125}
-                className="absolute z-10 left-0 lg:-left-8 ml-8 shadow-lg"
+                className="absolute z-10 left-0 lg:-left-8 ml-8 shadow-lg max-w-full h-auto"
               />
               {/* Hình ảnh dashboard (to hơn nhiều so với điện thoại và nằm bên phải) */}
               <Image
@@ -369,7 +370,7 @@ export default function LandingPage() {
                 alt="Dashboard"
                 width={500}
                 height={500}
-                className="rounded-lg shadow-lg ml-16 lg:ml-24"
+                className="rounded-lg shadow-lg ml-16 lg:ml-24 max-w-full h-auto"
               />
             </div>
           </div>
