@@ -1,14 +1,11 @@
 "use client";
-import { useState, useRef, useEffect } from "react";
+import { useEmailValidation } from "@/hooks/useEmailValidation";
 import Head from "next/head";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { ArrowRight, Check } from "lucide-react";
 import PaymentMethodsSection from "./payment-methods-section";
 import Header from "./Header";
 import Footer from "./Footer";
-import { useEmailValidation } from "@/hooks/useEmailValidation";
 
 export default function LandingPage() {
   const { email, isValidEmail, handleEmailChange, handleEmailSubmit } =
@@ -87,10 +84,10 @@ export default function LandingPage() {
             Giải pháp cổng thanh toán tin cậy và uy tín hàng đầu
           </h2>
           <p className="text-center text-xl mb-8 mt-5 text-gray-600 max-w-5xl mx-auto">
-            “Vượt qua nhiều đề cử cùng hạng mục, Paykit nhận giải thưởng Sao
+            &quot;Vượt qua nhiều đề cử cùng hạng mục, Paykit nhận giải thưởng Sao
             Khuê 2024 nhờ tính sáng tạo, hiệu quả kinh tế và khả năng ứng dụng
             công nghệ để tạo ra tác động xã hội thông qua việc giải quyết các
-            điểm nghẽn về thanh toán cho nhà bán hàng trực tuyến.”
+            điểm nghẽn về thanh toán cho nhà bán hàng trực tuyến.&quot;
           </p>
           <div className="flex w-full justify-center pb-6">
             <Image
@@ -175,7 +172,7 @@ export default function LandingPage() {
               </h3>
               <p className="text-gray-600">
                 Paykit được phát triển bởi Công ty cổ phần Công nghệ Vidiva nhận
-                giải thưởng ở hạng mục "Đổi mới sáng tạo".
+                giải thưởng ở hạng mục &quot;Đổi mới sáng tạo&quot;.
               </p>
             </div>
           </div>
@@ -258,8 +255,8 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <p className="text-gray-600 mb-4">
-                "Dịch vụ thanh toán này đã giúp chúng tôi tăng doanh số bán hàng
-                một cách đáng kể. Rất dễ sử dụng và đáng tin cậy."
+                &quot;Dịch vụ thanh toán này đã giúp chúng tôi tăng doanh số bán hàng
+                một cách đáng kể. Rất dễ sử dụng và đáng tin cậy.&quot;
               </p>
               <div className="flex items-center">
                 <Image
@@ -277,9 +274,9 @@ export default function LandingPage() {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <p className="text-gray-600 mb-4">
-                "Chúng tôi đã thử nhiều giải pháp khác nhau, nhưng đây là dịch
+                &quot;Chúng tôi đã thử nhiều giải pháp khác nhau, nhưng đây là dịch
                 vụ tốt nhất mà chúng tôi từng sử dụng. Khách hàng của chúng tôi
-                rất hài lòng."
+                rất hài lòng.&quot;
               </p>
               <div className="flex items-center">
                 <Image
@@ -297,8 +294,8 @@ export default function LandingPage() {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <p className="text-gray-600 mb-4">
-                "Dịch vụ khách hàng tuyệt vời và tính năng đa dạng. Chúng tôi đã
-                tăng hiệu quả kinh doanh nhờ giải pháp thanh toán này."
+                &quot;Dịch vụ khách hàng tuyệt vời và tính năng đa dạng. Chúng tôi đã
+                tăng hiệu quả kinh doanh nhờ giải pháp thanh toán này.&quot;
               </p>
               <div className="flex items-center">
                 <Image
@@ -339,7 +336,7 @@ export default function LandingPage() {
                 placeholder="Nhập email của bạn"
                 className={`w-full lg:w-64 p-2 border ${
                   isValidEmail ? "border-black" : "border-red-500"
-                } rounded-lg bg-transparent focus:outline-none focus:ring-2 focus:ring-green-600 placeholder-black text-black`}
+                } rounded-lg gbg-transparent focus:outline-none focus:ring-2 focus:ring-green-600 placeholder-black text-black`}
               />
               <button
                 onClick={handleEmailSubmit}
@@ -359,16 +356,20 @@ export default function LandingPage() {
           <div className="lg:w-1/2 flex justify-center lg:justify-end">
             <div className="relative flex items-center">
               {/* Hình ảnh điện thoại (nhỏ hơn so với dashboard, căn chỉnh với cạnh trái của dashboard) */}
-              <img
+              <Image
                 src="/bj0BRpY6Hzx8Se5cgRa6lgMxM0.avif"
                 alt="Mobile App"
-                className="w-32 lg:w-40 absolute z-10 left-0 lg:-left-8 shadow-lg"
+                width={500}
+                height={500}
+                className="absolute z-10 left-0 lg:-left-8 shadow-lg"
               />
               {/* Hình ảnh dashboard (to hơn nhiều so với điện thoại và nằm bên phải) */}
-              <img
+              <Image
                 src="/0cOBJcVJJKfVvDQm4zZpFjRm1Bg.avif"
                 alt="Dashboard"
-                className="w-200 lg:w-240 rounded-lg shadow-lg ml-16 lg:ml-24"
+                width={500}
+                height={500}
+                className="rounded-lg shadow-lg ml-16 lg:ml-24"
               />
             </div>
           </div>
