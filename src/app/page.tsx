@@ -360,7 +360,7 @@ export default function LandingPage() {
                 src="/bj0BRpY6Hzx8Se5cgRa6lgMxM0.avif"
                 alt="Mobile App"
                 width={500}
-                height={500}
+                height={50}
                 className="absolute z-10 left-0 lg:-left-8 shadow-lg"
               />
               {/* Hình ảnh dashboard (to hơn nhiều so với điện thoại và nằm bên phải) */}
